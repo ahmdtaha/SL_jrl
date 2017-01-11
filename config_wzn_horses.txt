@@ -1,0 +1,8 @@
+rootPath = /Users/ahmedtaha/Documents/MATLAB/Datasets/weizmann_horse_db/rgb/
+annotationPath_3 = /Users/ahmedtaha/Documents/MATLAB/Datasets/weizmann_horse_db/annotations-3/
+savePath = /Users/ahmedtaha/Documents/MATLAB/Datasets/weizmann_horse_db/save_path/
+groundTruthPath = /Users/ahmedtaha/Documents/MATLAB/Datasets/weizmann_horse_db/images-gt/
+dataset_name = wzn_horses
+
+
+

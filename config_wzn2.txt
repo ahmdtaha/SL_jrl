@@ -1,0 +1,9 @@
+rootPath = /Users/ahmedtaha/Documents/MATLAB/Datasets/Weizmann_Seg_DB_2obj/rgb/
+annotationPath_3 = /Users/ahmedtaha/Documents/MATLAB/Datasets/Weizmann_Seg_DB_2obj/annotations_3/
+savePath = /Users/ahmedtaha/Documents/MATLAB/Datasets/Weizmann_Seg_DB_2obj/save_path/
+groundTruthPath = /Users/ahmedtaha/Documents/MATLAB/Datasets/Weizmann_Seg_DB_2obj/Segmentation_1_bw_final/
+dataset_name = wzn_2_object
+
+
+
+

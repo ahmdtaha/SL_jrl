@@ -1,0 +1,8 @@
+rootPath = /Users/ahmedtaha/Documents/MATLAB/Datasets/Geodesic-Star-Dataset/images/
+annotationPath_3 = /Users/ahmedtaha/Documents/MATLAB/Datasets/Geodesic-Star-Dataset/images-labels/
+savePath = /Users/ahmedtaha/Documents/MATLAB/Datasets/Geodesic-Star-Dataset/save_path/
+groundTruthPath = /Users/ahmedtaha/Documents/MATLAB/Datasets/Geodesic-Star-Dataset/images-gt/
+dataset_name = geodesic
+
+
+

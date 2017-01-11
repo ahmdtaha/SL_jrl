@@ -1,0 +1,5 @@
+rootPath = /Users/ahmedtaha/Documents/MATLAB/Datasets/Interactive-gt-BSD100/images/
+annotationPath_3 = /Users/ahmedtaha/Documents/MATLAB/Datasets/Interactive-gt-BSD100/annotations_3/
+savePath = /Users/ahmedtaha/Documents/MATLAB/Datasets/Interactive-gt-BSD100/save_path/
+groundTruthPath = /Users/ahmedtaha/Documents/MATLAB/Datasets/Interactive-gt-BSD100/masks/
+dataset_name = bsd100
