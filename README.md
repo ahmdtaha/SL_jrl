@@ -29,6 +29,7 @@ You can download the collected annotated datasets from this [link](https://drive
 ## Setup
 - Download the latest push.
 - Run the scribble_script MATLAB script file
+
 For help, please contact ahmdtaha [@] cs dot umd dot edu
 
 ## Contributor list
