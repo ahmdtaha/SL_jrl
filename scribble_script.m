@@ -12,6 +12,10 @@ savePath = char(values(3));
 groundtruthPath = char(values(4));
 dataset_name = char(values(5));
 
+params = {};
+params.NUM_EIG = 100;
+params.NUM_PIVOTS = 21;
+
 
 %% Use these lines to list all files.
 filesPath = [rootPath '*.jpg'];
@@ -43,7 +47,7 @@ for i=1:length(filenames)
     markerImage3 = imread(filenames_annotations);
 
     
-    [accuracy,strokesJI] = scribble_image(filenames{i},markerImage3,groundtruthPath,savePath,dataset_name);
+    [accuracy,strokesJI] = scribble_image(filenames{i},markerImage3,groundtruthPath,savePath,dataset_name,params);
     fnames{i} = name;
     strokesJIs = [strokesJIs;strokesJI];
     accuracies = [accuracies;accuracy]; 

@@ -1,9 +1,9 @@
-function [ positiveSample,negativeSample ] = markers2samples( markerImage,height,width )
+function [ positiveSample,negativeSample ] = markers2samples( markerImage,height,width,params )
 
 positiveMarkerImage= zeros(size(markerImage));positiveMarkerImage(markerImage ==1)= 1;positiveMarkerImage(markerImage ==3)= 3;
 negativeMarkerImage= zeros(size(markerImage));negativeMarkerImage(markerImage ==2)= 2;negativeMarkerImage(markerImage ==6)= 6;
 %figure;imagesc(markerImage);
-ExpectedSampleCount = 20;
+ExpectedSampleCount = params.NUM_PIVOTS-1;
  negativeSample = negativemarker2samples(negativeMarkerImage,height,width,ExpectedSampleCount);
  if(~isempty(negativeSample ) )
  negativeSample = sub2ind([height,width],negativeSample(:,1),negativeSample(:,2));

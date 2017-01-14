@@ -1,4 +1,4 @@
-function [ fillResult] = colorandspatialaffinity( imagePath,markerImage,ratio,percentile)
+function [ fillResult] = colorandspatialaffinity( imagePath,markerImage,ratio,percentile,params)
 
 
 OriginalImage = imread(imagePath);
@@ -19,7 +19,7 @@ y = ypos - yneg;
 %figure;imagesc(reshape(y,height,width));
 %positiveSample = randsample(sampleIndexes,20,true,efunc_w);
 
-[positiveSample,negativeSample] = markers2samples(markerImage,height,width);
+[positiveSample,negativeSample] = markers2samples(markerImage,height,width,params);
 positiveSample  = unique(positiveSample , 'rows');
 negativeSample  = unique(negativeSample, 'rows');
 
@@ -139,7 +139,7 @@ if(isPCAEnable)
      TotalVector = COEFF;
 end
 
-NUM_EVECS = 100;
+NUM_EVECS = params.NUM_EIG;
 SIGMA_Percentage = 0.125;
 lambda = 1000;
 %f_efunc = calculate_eigenvector([RGBrelativeToPositive,RGBrelativeToNegative,LABcolor,VC],SIGMA_Percentage,NUM_EVECS,y,lambda); 

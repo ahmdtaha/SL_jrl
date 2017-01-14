@@ -1,4 +1,4 @@
-function [AccuracyRow,strokesJI] = scribble_image(path,markerImage,groundtruthPath,savePath,dataset_name )
+function [AccuracyRow,strokesJI] = scribble_image(path,markerImage,groundtruthPath,savePath,dataset_name,params)
 
 
 [pathstr,name,ext] = fileparts(path) ;
@@ -29,7 +29,7 @@ height = size(OriginalImage,1);
 
 
 while(count <= 0)
-    [fillResult1] = colorandspatialaffinity( path,markerImage,ratio,percentile);
+    [fillResult1] = colorandspatialaffinity( path,markerImage,ratio,percentile,params);
     %figure;imagesc(fillResult1);
 
 
